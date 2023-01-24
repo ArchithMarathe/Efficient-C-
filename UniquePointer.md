@@ -27,7 +27,10 @@
 
 11. The copy ctor of unique_ptr is deleted , so we cannot pass by value unique_ptr to a function,so to pass unique_ptr to functions
     we can use std::move() if we no longer need the unique_ptr after passing or we can pass by reference.
-<code> 
+
+	
+```
+	
 #include<iostream>
 #include<memory>
 #include "Integer.h"
@@ -36,12 +39,13 @@ int main(int argc, char const *argv[])
 {
 	
 	std::unique_ptr<Integer> ptr{GetPointer(40)};
-	std::cout<<*(ptr->myInt)<<std::endl;
+	std::cout<<*(ptr->myInt)<<std::endl; //40
 	Integer* ptr2 = ptr.get();
 	*ptr2->myInt = 45;
-	std::cout<<*ptr->myInt;
-	std::cout<<(ptr==nullptr);
+	std::cout<<*ptr->myInt; //45
+	std::cout<<(ptr==nullptr); //0
 	ptr.reset(new Integer{80});
 	return 0;
 }
-</code>
+	
+```
