@@ -30,7 +30,6 @@
 
 	
 ```
-	
 #include<iostream>
 #include<memory>
 #include "Integer.h"
@@ -47,8 +46,9 @@ int main(int argc, char const *argv[])
 	ptr.reset(new Integer{80});
 	return 0;
 }
-	
 ```
 	
+[Next: Shared Pointers](./SharedPointers.md)
 	
-	[Next: Shared Pointers](./SharedPointers.md)
+	
+	
