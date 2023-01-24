@@ -20,3 +20,5 @@
 
 6. There’s typically no way to tell if the pointer dangles, i.e., points to memory that no longer holds the object the pointer is supposed to point to. 
    Dangling pointers arise when objects are destroyed while pointers still point to them.
+   
+[Home]()                                                    [Next: UniquePointer]()
