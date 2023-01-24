@@ -49,3 +49,6 @@ int main(int argc, char const *argv[])
 }
 	
 ```
+	
+	
+	[Next: Shared Pointers](./SharedPointers.md)
